@@ -1,3 +1,12 @@
+import sys
+from pathlib import Path
+
+# Add the project root to the Python path
+sys.path.append(str(Path(__file__).parent.parent))
+
+# Now import other modules
+from app.database import Database
+import streamlit as st
 import streamlit as st
 from app.database import Database
 import pandas as pd
